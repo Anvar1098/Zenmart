@@ -23,7 +23,7 @@ p {
 
 /*NAVBAR*/
 .navbar_frame {
-    position: relative;
+   position: relative;
     width: 100%;
     height: 145px;
     display: flex;
@@ -33,8 +33,10 @@ p {
 }
 
 .navbar_frame .container {
+    
     padding: 20px 0px 14px;
     flex-direction: column;
+   
 }
 
 .navbar_frame .navbar_top {
@@ -301,5 +303,247 @@ height: 18px;
     line-height: 28px;
     color: #ffffff;
 }
+/* NAVBAR END*/
 
-/* NAVABR END*/
+/* HOME PAGE CSS*/
+
+.home_page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.header_frame {
+    position: relative;
+    margin-top: 47px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: center;
+}
+
+.header_frame .container {
+    flex-direction: row; 
+}
+
+.header_frame .container .header_left {
+    position: relative;
+    padding: 15px;
+    width: 875px;
+    height: 588px;
+
+    background-color: #0053f6;
+    background-image: url(../images/header_bg.svg);
+    border-radius: 5px;
+}
+
+.header_frame .header_left .header_content {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_frame .header_content div {
+    width: 104px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #f5c34b;
+    border-radius: 6px;
+    
+    
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #041e42;
+}
+
+.header_frame .header_content span {
+    margin-top: 10px;
+    width: 428px;
+
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 87px;
+    color: #ffffff;
+}
+
+.header_frame .header_content p {
+    margin-top: 10px;
+   
+
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.header_frame .header_content a {
+    margin-top: 20px;
+    width: 140px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+    border-radius: 6px;
+
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: rgb(4, 30, 66);
+}
+
+.header_frame .header_content img {
+    position: absolute;
+    right: 5px;
+}
+
+.header_frame .container .header_right {
+    position: relative;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_frame .header_right .header_box {
+    width: 422px;
+    height: 240px;
+
+    display: flex;
+    flex-direction: row;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+.header_frame .header_right .box_left {
+    margin-left: 30px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_frame .box_left span {
+   font-family: "Jost"; 
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #0053f6;
+
+}
+
+.header_frame .box_left p {
+    font-family: "Jost"; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 38px;
+    color: #041e42;
+}
+
+.header_frame .box_left a {
+    font-family: "Jost"; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #041e42;
+}
+
+.header_frame .box_left .hover_border {
+    margin-top: 3px;
+    width: 32px;
+    height: 2px;
+
+    background: #041e42;
+}
+
+.header_frame .header_box .box_right {
+    width: 50%;
+}
+
+.header_frame .box_right img {
+    width: 100%;
+    height: 100%;
+}
+
+/*SERVICE FRAME SECTION*/
+
+.home_page .servive_frame {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+   
+}
+
+.service_frame .container {
+    flex-direction: row;
+}
+
+
+.container .service_box {
+    width: 25%;
+    height: 86px;
+
+    display: flex;
+    flex-direction: row;
+
+    border-bottom: 1px solid #eaeaea;
+}
+
+.service_box img {
+    width: 35px;
+    height: 35px;
+}
+
+.service_box .service_content {
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service_content span {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #041e42;
+}
+
+.service_content p {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #626974;
+}
+
+
+
