@@ -316,6 +316,10 @@ height: 18px;
     padding-bottom: 60px;
 }
 
+.white_svg {
+    filter: brightness(0) invert(1);
+}
+
 /*Put here  !!!!!!!!!! */
 .container .category_top {
     width: 100%;
@@ -929,7 +933,7 @@ height: 18px;
     flex-direction: column;
 }
 
-.container .spec_product_wrapper {
+.spec_product_frame .container .spec_product_wrapper {
     position: relative;
     margin-top: 35px;
     width: 100%;
@@ -939,7 +943,7 @@ height: 18px;
     flex-direction: row;
 }
 
-.spec_product_wrapper .big_product_box {
+.spec_product_frame .spec_product_wrapper .big_product_box {
     position: relative;
     padding: 30px;
     width: 664px;
@@ -953,14 +957,14 @@ height: 18px;
     border-radius: 6px;
 }
 
-.big_product_box .big_product_content {
+.spec_product_frame .big_product_box .big_product_content {
     width: 160px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.big_product_content span {
+.spec_product_frame .big_product_content span {
     font-family: "Jost";
     font-style: normal;
     font-weight: 400;
@@ -970,7 +974,7 @@ height: 18px;
     color: #041e42;
 }
 
-.big_product_content p {
+.spec_product_frame .big_product_content p {
     margin: 7px 0;
     font-family: "Jost";
     font-style: normal;
@@ -981,7 +985,7 @@ height: 18px;
     color: #041e42;
 }
 
-.big_product_content a {
+.spec_product_frame .big_product_content a {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -991,14 +995,14 @@ height: 18px;
     color: #041e42;
 }
 
-.big_product_box img {
+.spec_product_frame .big_product_box img {
     position: absolute;
     width: 322px;
     height: 309px;
     right: 5%;
 }
 
-.spec_product_wrapper .small_product_wrapper {
+.spec_product_frame .spec_product_wrapper .small_product_wrapper {
     margin-left: 30px;
     width: 620px;
     height: 368px;
@@ -1008,7 +1012,7 @@ height: 18px;
     flex-wrap: wrap;
 }
 
-.small_product_wrapper .small_product_box {
+.spec_product_frame .small_product_wrapper .small_product_box {
     position: relative;
     padding: 30px;
     width: 293px;
@@ -1024,16 +1028,16 @@ height: 18px;
 
 
 
-.small_product_box:nth-child(odd) {
+.spec_product_frame .small_product_box:nth-child(odd) {
     margin-right: 30px;
 }
 
-.small_product_box .small_product_content {
+.spec_product_frame .small_product_box .small_product_content {
     display: flex;
     flex-direction: column;
 }
 
-.small_product_content strong {
+.spec_product_frame .small_product_content strong {
     font-family: "Jost";
     font-style: normal;
     font-weight: 500;
@@ -1043,7 +1047,7 @@ height: 18px;
     color: #041e42;
 }
 
-.small_product_content span {
+.spec_product_frame .small_product_content span {
     font-family: "Jost";
     font-style: normal;
     font-weight: 400;
@@ -1055,11 +1059,13 @@ height: 18px;
 
 
 
-.small_product_box img {
+.spec_product_frame .small_product_box img {
     position: absolute;
     right: 30px;
     bottom: 15px;
 }
+
+/* TV FRAME SECTION*/
 
 .home_page .tv_frame {
     position: relative;
@@ -1076,7 +1082,7 @@ height: 18px;
     flex-direction: column;
 }
 
-.container .tv_wrapper {
+.tv_frame .container .tv_wrapper {
     margin-top: 30px;
     width: 100%;
     height: auto;
@@ -1086,7 +1092,7 @@ height: 18px;
     justify-content: space-between;
 }
 
-.tv_wrapper .tv_product_boxes {
+.tv_frame .tv_wrapper .tv_product_boxes {
     width: 1300px;
     height: 452px;
 
@@ -1094,7 +1100,7 @@ height: 18px;
     flex-direction: row;
 }
 
-.tv_product_boxes .tv_product_box {
+.tv_frame .tv_product_boxes .tv_product_box {
     width: 260px;
     height: 452px;
 
@@ -1105,11 +1111,378 @@ height: 18px;
     background: #ffffff;
 }
 
-.tv_product_box .product img {
+.tv_frame .tv_product_box .product img {
      width: 100%;
      height: 280px;
      display: flex;
 }
+
+/*EVENT FRAME SECTION*/
+
+.home_page .event_frame {
+    position: relative;
+    margin-top: 90px;
+    width: 100%;
+    height: 632px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-image: url(../images/icons/event_bg.png);
+    background-size: cover;
+}
+
+.event_frame .container {
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.event_frame  .container .event_content_box {
+    width: 340px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event_frame  .event_content_box .event_title {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    text-transform: capitalize;
+   
+    color:#ffffff;
+}
+
+.event_frame .event_content_box .timer_wrapper {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.event_frame  .timer_wrapper .timer_box {
+    width: 82px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.event_frame .timer_box strong {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+   
+    color: #ffffff;
+}
+
+.event_frame .timer_box span {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+   
+    color: #ffffff;
+}
+
+.event_frame  .event_content_box a {
+    width: 140px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+   
+    color: #041e42
+}
+
+.event_frame .container .event_product_wrapper {
+    width: 930px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.event_frame .event_product_wrapper .event_product_boxes {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.event_frame  .event_product_boxes .event_product_box {
+    margin-right: 8px;
+    width: 205px;
+    height: 392px;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.event_frame  .event_product_box  .event_product_img {
+    width: 100%;
+    height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FOOTER SECTION HERE*/
+
+.footer_frame {
+    position: relative;
+    padding: 90px 0 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #f3f5f6;
+}
+
+.footer_spec_title {
+    display: block;
+    margin-bottom: 30px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+   
+    color: #041e42
+}
+
+.footer_frame .container {
+    flex-direction: column;
+}
+
+.container .footer_top {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_top .footer_contact_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact_box .footer_contact_main {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_contact_main img {
+    width: 35px;
+    height: 30px;
+}
+
+.footer_contact_main div {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact_main div strong {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+   
+    color: #041e42
+}
+
+.footer_contact_main div span {
+    margin-top: 10px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+   
+    color: #041e42
+}
+
+.footer_support_box {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_support_box a {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+   
+    color: #041e42
+}
+
+.footer_media_box {
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_media_box .footer_media_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_media_main .media_box {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.media_box i {
+    margin-right: 25px;
+}
+
+.footer_media_main .mobile_app_box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mobile_app_box img {
+    width: 24px;
+    height: 16px;
+}
+
+.mobile_app_box span {
+    margin-left: 20px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+   
+    color: #041e42
+}
+
+.footer_media_main .card_box {
+    width: 272px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .footer_bottom {
+    margin-top: 90px;
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer_bottom .footer_main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_main .footer_bottom_left {
+    width: 940px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_bottom_left span {
+    margin-right: 60px;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    color: #041e42
+}
+
+.footer_main .footer_bottom_right {
+    width: 480px;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_bottom_right .footer_select_box {
+    padding: 10px 20px;
+    width: 180px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    
+    background: #ffffff;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+}
+
+.footer_select_box span {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+    color: #041e42
+}
+
+.footer_select_box select {
+    margin-left: 20px;
+    width: 70px;
+    height: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+    color: #041e42
+}
+
 
 
 
