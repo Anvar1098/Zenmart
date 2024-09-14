@@ -50,7 +50,7 @@ header_frame {
     border-radius: 6px;
     
     
-    font-family: Jost;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -62,7 +62,7 @@ header_frame {
     margin-top: 10px;
     width: 428px;
 
-    font-family: Jost;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
@@ -74,7 +74,7 @@ header_frame {
     margin-top: 10px;
    
 
-    font-family: Jost;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -94,7 +94,7 @@ header_frame {
     background: #ffffff;
     border-radius: 6px;
 
-    font-family: Jost;
+    font-family: var(--font);
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -135,7 +135,7 @@ header_frame {
 }
 
 .box_left span {
-   font-family: "Jost"; 
+    font-family: var(--font);
    font-style: normal;
    font-weight: 400;
    font-size: 15px;
@@ -145,7 +145,7 @@ header_frame {
 }
 
 .box_left p {
-    font-family: "Jost"; 
+    font-family: var(--font);
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -154,7 +154,7 @@ header_frame {
 }
 
 .box_left a {
-    font-family: "Jost"; 
+    font-family: var(--font); 
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
